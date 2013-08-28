@@ -169,6 +169,16 @@ cleanup()
 [ -z "$1" ] && ee "Please pass an email address as an argument"
 
 
+# Adding dependencies
+case ${install[2]} in
+	dpkg )
+		dep "mailutils"
+		;;
+	rpm )
+		dep "mailx"
+		;;
+esac
+
 # Checking dependencies
 for dep in ${DEPENDENCIES[@]}; do
 	check "$dep"
