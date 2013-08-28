@@ -45,5 +45,7 @@ Create file ````/etc/cron.daily/rkhunter.sh```` with execute permission, and pas
 ) | /bin/mail -s 'rkhunter Daily Run (HOSTNAME)' YOUR@EMAIL.COM
 ````
 
+Note: You can run your cron jobs whenever you want.
+
 
 For further info check [Installation tutorial](http://www.tecmint.com/install-linux-rkhunter-rootkit-hunter-in-rhel-centos-and-fedora/)
