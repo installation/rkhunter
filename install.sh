@@ -87,7 +87,7 @@ check()
 dep()
 {
 	has_dep "$1"
-	if [ ! -z "$1" -a $? -eq 0 ]; then
+	if [ ! -z "$1" -a $? -eq 1 ]; then
 		DEPENDENCIES+=("$1")
 		return 0
 	fi
