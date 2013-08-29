@@ -194,7 +194,7 @@ else
 	download http://ncu.dl.sourceforge.net/project/rkhunter/rkhunter/1.4.0/rkhunter-1.4.0.tar.gz "$NAME $VER files"
 fi
 
-tar -xvf rkhunter-1.4.0.tar.gz >> $INSTALL_LOG 2>> $ERROR_LOG
+tar -xzf rkhunter-1.4.0.tar.gz >> $INSTALL_LOG 2>> $ERROR_LOG
 cd rkhunter-1.4.0
 
 ./installer.sh --layout default --install >> $INSTALL_LOG 2>> $ERROR_LOG || ee "Installing $NAME $VER failed"
