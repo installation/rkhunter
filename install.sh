@@ -4,7 +4,7 @@
 # Author: Márk Sági-Kazár (sagikazarmark@gmail.com)
 # This script installs Rootkit Hunter on several Linux distributions.
 #
-# Version: x.x
+# Version: 1.4.0
 
 # Variable definitions
 DIR=$(cd `dirname $0` && pwd)
