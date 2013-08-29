@@ -25,7 +25,7 @@ Dependencies will be installed during the progress, but installing them on your 
 
 ## Installation
 
-Download and run ````install.sh````
+Download and run ````install.sh YOUR@EMAIL.COM````
 
 ### Offline installation
 
@@ -33,7 +33,7 @@ Clone this repository or download ````install.sh```` and download the following 
 
 [Rootkit Hunter Archive](http://ncu.dl.sourceforge.net/project/rkhunter/rkhunter/1.4.0/rkhunter-1.4.0.tar.gz)
 
-Run ````install.sh````
+Run ````install.sh YOUR@EMAIL.COM````
 
 Create file ````/etc/cron.daily/rkhunter.sh```` with execute permission, and paste the following content:
 ````
