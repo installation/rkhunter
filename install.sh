@@ -70,6 +70,8 @@ check()
 {
 	[ -z "$1" ] && { e "No package passed" 31; return 2; }
 
+	[ `which "$1" 2> /dev/null` ] && return 0
+
 	case ${install[2]} in
 		dpkg )
 			${install[3]} -s "$1" &> /dev/null
